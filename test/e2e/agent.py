@@ -64,7 +64,7 @@ def run_agent(pod_name, namespace):
     user_prompts = [f"""Review the OpenShift logs for the pod '{pod_name}' and container 'step-s2i-build', in the '{namespace}' namespace.
                 If the logs indicate an error search for the top OpenShift solution.
                 Create a summary message with the category and explanation of the error.
-                Create a github issue using these parameters {{"name":"create_issue","arguments":{{"owner":"redhat-ai-services","repo":"etx-agentic-ai","title":"Issue with Etx pipeline","body":"summary of the error."}}}}. DO NOT add any optional parameters."""]
+                Create a github issue using these parameters {{"name":"create_issue","arguments":{{"owner":"vindian","repo":"etx-agentic-ai","title":"Issue with Etx pipeline","body":"summary of the error."}}}}. DO NOT add any optional parameters."""]
 
 #    user_prompts = [
 #        f"Review the OpenShift logs for the pod '{pod_name}',in the '{namespace}' namespace. "
